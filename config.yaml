@@ -1,0 +1,18 @@
+games: 1000
+time_per_game_seconds: 10
+max_plies: 300
+
+engines:
+  - name: mozzarella-v1.0
+    repo: "https://github.com/brandonthiessen/mozzarella-engine.git"
+    commit: "9f26688f85fdb9847427f31164c3a02a5cd75e02"
+    dir: "src"
+    build: "make"
+    exec: "./mozzarella"
+
+  - name: mozzarella-v1.1-unified-move-ordering
+    repo: "https://github.com/brandonthiessen/mozzarella-engine.git"
+    commit: "007b1b1051969c2bc972e5747239c335115d96b3"
+    dir: "src"
+    build: "make release"
+    exec: "./mozzarella"
