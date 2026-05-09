@@ -205,7 +205,7 @@ def main():
     with open("config.yaml", "r") as f:
         config = yaml.safe_load(f)
 
-    positions_file = config.get("positions_file", "positions/output.txt")
+    positions_file = config.get("positions_file", "positions/positions.txt")
     num_positions = config.get("num_positions", 500)
     time_per_game = config["time_per_game_seconds"]
     max_plies = config["max_plies"]
